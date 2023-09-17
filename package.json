@@ -1,14 +1,14 @@
 {
 
-    
+  "scripts": {
+		"start": "nodemon index.js"
+	},
 
   "name": "arch_lab_one",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/PrinceMwenye/arch_lab_one.git"
