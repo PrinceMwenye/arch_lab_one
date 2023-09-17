@@ -45,6 +45,7 @@ class Note {
 }
 
 function addNote() {
+    console.log("inside")
     const notesContainer = document.getElementById('notesContainer');
     const newIndex = notesContainer.querySelectorAll('textarea').length;
     new Note(newIndex);
