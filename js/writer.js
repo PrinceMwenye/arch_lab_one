@@ -50,6 +50,19 @@ function addNote() {
     const newIndex = notesContainer.querySelectorAll('textarea').length;
     new Note(newIndex);
 }
+function loadNotes() {
+    const savedNotes = JSON.parse(localStorage.getItem('notes')) || [];
+
+    savedNotes.forEach((note, index) => {
+        const newNote = new Note(index);
+        if (note && note.content) {
+            newNote.textArea.value = note.content;
+        }
+    });
+
+    // Update the last saved time
+    updateLastSavedTime();
+}
 
 
 // Event listener for the "Add Note" button
